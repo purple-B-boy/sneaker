@@ -1,0 +1,114 @@
+/* slider's */
+#slider,
+#slider2{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+/* slider arrow */
+#slider .prev,
+#slider .next,
+#slider2 .prev,
+#slider2 .next{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+    position: absolute;
+    top: 45%;
+    transition: 0.5s;
+    z-index: 10;
+}
+#slider .prev:hover,
+#slider .next:hover,
+#slider2 .prev:hover,
+#slider2 .next:hover{
+    opacity: 0.5;
+}
+#slider .prev::before,
+#slider .prev::after,
+#slider .next::before,
+#slider .next::after,
+#slider2 .prev::before,
+#slider2 .prev::after,
+#slider2 .next::before,
+#slider2 .next::after{
+    
+    content: "";
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+}
+#slider .prev:before,
+#slider2 .prev:before{
+    top: 37%;
+    transform: rotate(-45deg);
+}
+#slider .prev:after,
+#slider2 .prev:after{
+    bottom: 37%;
+    transform: rotate(45deg);
+}
+/* slider arrow  end */
+
+/* right slider arrow */
+
+#slider .next:before,
+#slider2 .next:before{
+    top: 37%;
+    transform: rotate(45deg);
+}
+#slider .next:after,
+#slider2 .next:after{
+    bottom: 37%;
+    transform: rotate(-45deg);
+}
+/* right slider arrow end */
+
+
+#slider img{
+    margin: 0 50px;
+}
+
+/* スライダー左矢印 */
+/* left slider1 */
+#slider .prev{
+    left: 0;
+}
+#slider .prev::before,
+#slider .prev::after{
+    left: 12px;
+}
+
+#slider .next{
+    right: 0;
+}
+#slider .next::before,
+#slider .next::after{
+    right: 12px;
+}
+/* left slider1 end */
+
+/* left slider2 */
+
+#slider2 .prev{
+    left: 10px;
+}
+#slider2 .prev::before,
+#slider2 .prev::after{
+    left: 12px;
+}
+#slider2 .next{
+    right: 10px;
+}
+#slider2 .next::before,
+#slider2 .next::after{
+    right: 12px;
+}
+/* left slider2 end */
+/* slider's end */

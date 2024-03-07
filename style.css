@@ -1,0 +1,176 @@
+html{
+
+}
+body{
+    font-size: 100%;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+header{
+    position: fixed;
+    z-index: 10;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+
+}
+.site-title{
+    margin: 20px 0 0 40px;
+}
+.video{
+}
+.video video{
+    width: 100%;
+    overflow: hidden;
+}
+main{
+}
+.wirapper{
+    padding: 0 10%;
+}
+.section-title{
+    text-align: center;
+    margin:  30px 0;
+}
+/* pick up */
+#pickup li{
+    margin: 0 30px;
+}
+#pickup li img{
+    width: 30vw;
+    height: auto;
+}
+/* pick up end */
+/* feature */
+#feature{
+   margin-bottom: 30px;
+}
+.feature-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.feature-list li{
+    width: 30%;
+    box-shadow: 0 0 8px 4px #333 ;
+    margin-bottom: 30px;
+    height: auto;
+}
+.feature-list li img{
+    object-fit: cover;
+    width: 100%;
+}
+.feature-list .grid .f-text{
+    padding: 20px 20px;
+    text-align: left;
+}
+.feature-list .grid .category{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.feature-list .grid .text{
+    margin-bottom: 30px;
+    
+}
+.feature-list .grid .f-text time{
+    font-size: 10px;
+    float: right;
+}
+/* feature end */
+
+.bg-color{
+    background-color: #000;
+    color: #fff;
+}
+
+/* contact */
+#contact{
+    text-align: center;
+}
+#contact .section-title{
+    padding: 60px 0 0 0;
+    margin-bottom: 40px;
+}
+#contact .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-text{
+    text-align: left;
+    width: 45%;
+}
+.contact-text p{
+    margin-bottom: 36px;
+}
+.contact-form{
+    text-align: left;
+    width: 45%;
+}
+.contact-form input{
+    margin-bottom: 23px;
+}
+.contact-form textarea{
+    margin-bottom: 23px;
+}
+
+
+/* contact end */
+#footer{
+    text-align: center;
+    font-size: 10px;
+    padding-top: 50px;
+}
+
+@media screen and (max-width:900px){
+    
+    header{
+        
+    }
+    .video video{
+        overflow: hidden;
+        height: 100vh;
+        object-fit: cover;
+    }
+    #pickup li{
+        margin: 10px;
+    }
+    #pickup li img{
+        width: 80vw;
+    }
+    #feature .feature-list{
+        display: block;
+    }
+    #contact .flex{
+        display: block;
+    }
+    .feature-list li{
+        width: 100%;
+        box-shadow: 0 0 8px 4px #333 ;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    
+    .contact-text{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form p{
+        text-align: left;
+    }
+    .btn{
+        text-align: center;
+        margin: 0 auto;
+    }
+}

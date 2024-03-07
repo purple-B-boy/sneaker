@@ -1,0 +1,115 @@
+/* hamburger menu */
+/* navi */
+#navi{
+    display: block;
+    position: fixed;
+    top:0;
+    left: -300px;
+    bottom:0;
+    width: 300px;
+    color: #fff;
+    padding:60px 25px;
+    background-color: #121212;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all 0.5s;
+    z-index: 20;
+    opacity: 0;
+}
+#navi a{
+    color: #fff;
+    
+}
+.open #navi{
+    left: 0;
+    opacity: 1;
+}
+#navi ul{
+    margin: 50px 0 25px 0;
+
+}
+#navi ul li{
+    margin-bottom: 30px;
+
+}
+#navi ul li a{
+    border-bottom: #fff solid 1px;
+}
+/* navi end */
+
+/* toggle_btn */
+.toggle_btn{
+    width:50px;
+    height: 50px;
+    display: block;
+    position: fixed;
+    right: 40px;
+    top:20px;
+    z-index: 20;
+    transition: all 0.5s;
+    cursor:pointer;
+}
+.toggle_btn span{
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 12px;
+    transition: all 0.5s;
+}
+.toggle_btn span:nth-child(1){
+    top: 12px;
+}
+.toggle_btn span:nth-child(2){
+    top: 23px;
+}
+.toggle_btn span:nth-child(3){
+    bottom: 13px;
+}
+.open .toggle_btn span{
+    background-color: #333;
+}
+.open .toggle_btn span:nth-child(1){
+    -webkit-transform: translateY(11px) rotate(-315deg);
+    transform: translateY(11px) rotate(-315deg);
+}
+.open .toggle_btn span:nth-child(2){
+    opacity: 0;
+}
+.open .toggle_btn span:nth-child(3){
+    -webkit-transform: translateY(-11px) rotate(315deg);
+    transform: translateY(-11px) rotate(315deg);
+}
+/* toggle_btn end */
+/* hamburger menu end */
+@media screen and (max-width:900px) {
+#navi{
+    display: block;
+    position: fixed;
+    top:0;
+    left: -200px;
+    bottom:0;
+    width: 200px;
+    color: #fff;
+    padding:60px 25px;
+    background-color: #121212;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all 0.5s;
+    z-index: 20;
+    opacity: 0;
+}
+}
+.toggle_btn{
+    width:50px;
+    height: 50px;
+    display: block;
+    position: fixed;
+    right: 20px;
+    top:20px;
+    z-index: 20;
+    transition: all 0.5s;
+    cursor:pointer;
+}
